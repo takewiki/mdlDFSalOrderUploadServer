@@ -86,11 +86,11 @@ salOrderUploadServer <- function(input,output,session,dms_token) {
 salOrderViewServer <- function(input,output,session,dms_token) {
 
   #获取参数
-  text_salOredr_daterange = tsui::var_dateRange('text_salOredr_daterange')
+  text_salOrder_daterange = tsui::var_dateRange('text_salOrder_daterange')
 
   shiny::observeEvent(input$btn_salOrder_view,{
 
-    FDate = text_salOredr_daterange()
+    FDate = text_salOrder_daterange()
 
     FStartDate = FDate[1]
 
